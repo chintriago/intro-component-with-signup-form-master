@@ -1,0 +1,166 @@
+/* GENERAL/RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--red);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+p {
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+/* TOP TEXT SECTION */
+.text-container {
+    max-width: 768px;
+    padding: 6rem 0 0;
+    margin: 0 0 10rem;
+}
+
+.text-container h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.text-container p {
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* BOTTOM FORM SECTION */
+form {
+    max-width: 768px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: .4rem;
+    margin: 0 0 4rem;
+    padding: 1.45rem;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+#form-purple-btn {
+    max-height: 79px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    top: -6.2rem;
+    background-color: var(--blue);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: none;
+    border-radius: .4rem;
+    font-size: .8rem;
+    padding: 1.2rem 4rem;
+    text-align: center;
+}
+
+#form-purple-btn p {
+    text-align: center;
+    color: white;
+    font-size: .8rem;
+    line-height: 1.6;
+    letter-spacing: .02rem;
+}
+
+#form-purple-btn p span {
+    font-weight: 700;
+}
+
+.form-input {
+    border: 1px solid var(--grayish-blue);
+    border-radius: .2rem;
+}
+
+input::placeholder {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 1.2rem;
+}
+
+#form-green-btn {
+    background-color: var(--green);
+    color: white;
+}
+
+.form-pg {
+    font-size: .7rem;
+    color: var(--grayish-blue);
+    padding: 0;
+}
+
+.form-pg span {
+    color: var(--red);
+    font-weight: 700;
+    line-height: 2.8;
+}
