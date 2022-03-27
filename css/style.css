@@ -80,8 +80,8 @@ main {
 }
 
 .text-container p {
-    font-size: .95rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 300;
     line-height: 1.8;
 }
 
@@ -100,8 +100,17 @@ form {
     padding: 1.45rem;
 }
 
+input {
+    padding: 1.2rem;
+}
+
 input:focus {
     outline-style: none;
+}
+
+input::placeholder {
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 #form-purple-btn {
@@ -117,6 +126,7 @@ input:focus {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: none;
     border-radius: .4rem;
+    cursor: pointer;
     font-size: .8rem;
     padding: 1.2rem 4rem;
     text-align: center;
@@ -139,28 +149,77 @@ input:focus {
     border-radius: .2rem;
 }
 
-input::placeholder {
-    font-size: .9rem;
-    font-weight: 600;
-}
-
-input {
-    padding: 1.2rem;
-}
-
 #form-green-btn {
     background-color: var(--green);
     color: white;
+    cursor: pointer;
 }
 
-.form-pg {
-    font-size: .7rem;
+.form-bottom-text {
     color: var(--grayish-blue);
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .03rem;
     padding: 0;
 }
 
-.form-pg span {
+.form-bottom-text span {
     color: var(--red);
     font-weight: 700;
     line-height: 2.8;
+}
+
+.form-error-text {
+    color: red;
+    font-size: .7rem;
+    text-align: right;
+}
+
+.form-error-text {
+    display: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 769px) {
+
+    /* GENERAL/RESET */
+    main {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    /* TOP TEXT SECTION */
+    .text-container {
+        max-width: 550px;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .text-container h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+        text-align: left;
+    }
+
+    .text-container p {
+        font-weight: 400;
+        text-align: left;
+    }
+
+    /* BOTTOM FORM SECTION */
+    form {
+        max-width: 550px;
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+        padding: 2rem
+    }
+
+    #form-purple-btn {
+        max-height: 58px;
+        top: -5rem;
+    }
 }

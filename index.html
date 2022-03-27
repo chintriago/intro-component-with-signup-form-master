@@ -10,20 +10,24 @@
 </head>
 <body>
   <main>
-    <section class="text-container">
-      <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching<br> scripted tutorials is great, 
-      but understanding how developers think is<br> invaluable.</p> 
-    </section>
-    <form>
-      <button id="form-purple-btn" type="submit"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></button>
-      <input type="text" class="form-input" id="form-fname" placeholder="First Name">
-      <input type="text" class="form-input" id="form-lname" placeholder="Last Name">
-      <input type="email" class="form-input" id="form-email" placeholder="Email Address">
-      <input type="password" class="form-input" id="form-password" placeholder="Password">
-      <input type="button" class="form-input" id="form-green-btn" value="Claim your free trial" alt="submit">
-      <p class="form-pg">By clicking the button, you are agreeing to<br> our <span>Terms and Services</span></p>
-    </form>
+      <section class="text-container">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p> 
+      </section>
+      <form>
+        <button id="form-purple-btn" type="submit"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></button>
+        <input type="text" class="form-input" id="form-fname" placeholder="First Name">
+        <p class="form-error-text">First Name cannot be empty</p>
+        <input type="text" class="form-input" id="form-lname" placeholder="Last Name">
+        <p class="form-error-text">Last Name cannot be empty</p>
+        <input type="email" class="form-input" id="form-email" placeholder="Email Address">
+        <p class="form-error-text">Looks like this is not an email</p>
+        <input type="password" class="form-input" id="form-password" placeholder="Password">
+        <p class="form-error-text">Passwords cannot be empty</p>
+        <input type="submit" id="form-green-btn" class="form-input" value="Claim your free trial">
+        <p class="form-bottom-text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
