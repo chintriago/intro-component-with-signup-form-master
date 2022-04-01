@@ -10,7 +10,6 @@ const pWord = $("#form-password");
 const formArray = [fName, lName, eMail, pWord];
 
 form.submit(function (event) {
-    event.preventDefault();
     let fNameVal = $("#form-fname").val();
     let lNameVal = $("#form-lname").val();
     let eMailVal = $("#form-email").val();
@@ -18,11 +17,12 @@ form.submit(function (event) {
     let formValArray = [fNameVal, lNameVal, eMailVal, pWordVal];
     for(i=0; i<formArray.length; i++) {
         if(formValArray[i].length === 0 || formValArray[i].length === 0 && !eMailVal.match(mailFormat)) {
+            event.preventDefault();
             formInputElements[i].classList.add("border-red");
             formInputElements[i].classList.add("text-red");
             formImgElements[i].classList.add("inline-block");
             formParElements[i].classList.add("inline-block");
             formParElements[i].parentElement.classList.add("space");
         }
-    }
+    } 
 });

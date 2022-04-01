@@ -10,37 +10,40 @@
 </head>
 <body>
   <main>
+      <!-- TEXT SECTION -->
       <section class="text-container">
         <h1>Learn to code by watching others</h1>
         <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable.</p> 
       </section>
+      <!-- FORM SECTON -->
       <form>
         <button id="form-purple-btn" type="submit"><p><span>Try it free 7 days</span> then $20/mo. thereafter</p></button>
         <div class="form-input-container">
           <img class="form-icon-error" src="images/icon-error.svg" alt="icon-error">
           <p class="form-error-text">First Name cannot be empty</p>
-          <input type="text" class="form-input" id="form-fname" placeholder="First Name">
+          <input type="text" id="form-fname" placeholder="First Name">
         </div> 
         <div class="form-input-container">
           <img class="form-icon-error" src="images/icon-error.svg" alt="icon-error">
           <p class="form-error-text">Last Name cannot be empty</p>
-          <input type="text" class="form-input" id="form-lname" placeholder="Last Name">
+          <input type="text" id="form-lname" placeholder="Last Name">
         </div>  
         <div class="form-input-container">
           <img class="form-icon-error" src="images/icon-error.svg" alt="icon-error">
           <p class="form-error-text">Looks like this is not an email</p>
-          <input type="text" class="form-input" id="form-email" placeholder="Email Address">
+          <input type="text" id="form-email" placeholder="Email Address">
         </div>  
         <div class="form-input-container">
           <img class="form-icon-error" src="images/icon-error.svg" alt="icon-error">
           <p class="form-error-text">Passwords cannot be empty</p>
-          <input type="password" class="form-input" id="form-password" placeholder="Password">
+          <input type="password" id="form-password" placeholder="Password">
         </div>
-        <input type="submit" id="form-green-btn" value="Claim your free trial">
+        <input id="form-green-btn" type="submit" value="Claim your free trial">
         <p class="form-bottom-text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </form>
   </main>
+  <!-- JAVASCRIPT -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
