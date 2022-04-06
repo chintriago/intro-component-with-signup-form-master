@@ -215,6 +215,10 @@ form input::placeholder {
 @media screen and (min-width: 1024px) {
 
     /* GENERAL/RESET */
+body {
+    background-image: url(../images/bg-intro-desktop.png);
+}
+
     main {
         flex-direction: row;
         column-gap: 2rem;
@@ -277,8 +281,4 @@ form input::placeholder {
 
 .border-red {
     border: 1px solid red;
-}
-
-.text-red {
-    color: red;
 }

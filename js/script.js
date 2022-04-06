@@ -9,20 +9,27 @@ const eMail = $("#form-email");
 const pWord = $("#form-password");
 const formArray = [fName, lName, eMail, pWord];
 
-form.submit(function (event) {
+function errorMessageFunction(num) {
+    event.preventDefault();
+    formInputElements[num].classList.add("border-red");
+    formImgElements[num].classList.add("inline-block");
+    formParElements[num].classList.add("inline-block");
+    formParElements[num].parentElement.classList.add("space");
+}
+
+form.submit(function () {
     let fNameVal = $("#form-fname").val();
     let lNameVal = $("#form-lname").val();
     let eMailVal = $("#form-email").val();
     let pWordVal = $("#form-password").val();
     let formValArray = [fNameVal, lNameVal, eMailVal, pWordVal];
-    for(i=0; i<formArray.length; i++) {
+    for(let i=0; i<formArray.length; i++) {
         if(formValArray[i].length === 0 || formValArray[i].length === 0 && !eMailVal.match(mailFormat)) {
-            event.preventDefault();
-            formInputElements[i].classList.add("border-red");
-            formInputElements[i].classList.add("text-red");
-            formImgElements[i].classList.add("inline-block");
-            formParElements[i].classList.add("inline-block");
-            formParElements[i].parentElement.classList.add("space");
+            errorMessageFunction(i);
         }
-    } 
+    }
+    if(!eMailVal.match(mailFormat)) {
+        errorMessageFunction(2);
+        eMail.css("color", "red");
+    }
 });
