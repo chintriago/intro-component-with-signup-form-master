@@ -150,7 +150,7 @@ form input {
 }
 
 form input:focus {
-    border: 1px solid var(--dark-blue);
+    border: 2px solid var(--dark-blue);
     color: black;
     font-weight: 500;
     outline-style: none;
