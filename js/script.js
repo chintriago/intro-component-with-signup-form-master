@@ -45,6 +45,7 @@ form.submit(function (event) {
         if (i === 3 && fNameVal.length > 0 && lNameVal.length > 0 && eMailVal.match(mailFormat) && pWordVal.length > 0) {
             setTimeout(function () {
                 alert("Your information has been successfully submitted!");
+                location.reload();
             }, 500);
         }
     }
